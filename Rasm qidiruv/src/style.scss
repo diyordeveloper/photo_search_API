@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,600&display=swap');
+body{
+    background: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav{
+    width: 100%;
+    padding: 10px 0px 10px 00px;
+    background: gold; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #000; 
+}
+.formSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input{
+        margin: 20px;
+        border: none;
+        outline: none;
+        background: #fff;
+        border: 2px solid lightgray;
+        border-radius: 4px;
+        padding: 7px 15px 7px 15px ;
+        color: #000;
+        font-weight: 600;
+        width: 300px;
+    }
+     
+}
+.result{
+    padding: 90px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    .cardd{
+        display: flex;
+        .resultImage{
+            flex: 100% 1;
+            margin-top: 1rem;
+            border-radius: 20px;
+            width: 350px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .username{
+            text-align: center;
+            color: gold;
+        }
+    }
+}
+ 
+// Responsive
+@media screen and (max-width:501px){
+    .modaltext{
+        font-size: 16px;
+    }
+    .modalbtn{
+        font-size: 12px !important;
+    }
+    .nav .h1{
+        font-size: 25px;
+        font-size: 23px;
+    }
+    .result{
+        background: #000;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0 0 0 0;
+        .resultImage{
+            width: 100% !important;
+        }
+        .username{
+        color: gold;
+
+        }
+    }
+
+    .formSec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5% 0 5%;
+        input{
+            margin: 15px;
+            border: 2px solid lightgray;
+            border-radius: 3px;
+            padding: 5px 10px 5px 10px ; 
+            font-weight: normal;
+            width: 270px;
+        }
+         .buttonn{
+             font-size: 10px !important;
+         }
+    }
+}
+
+@media screen and (max-width:346px){
+    .modaltext{
+        font-size: 15px;
+    }
+    .modalbtn{
+        font-size: 11px !important;
+    }
+    .nav{
+        padding: 10px 30px 10px 30px;
+    }
+    .nav .h1{
+        font-size: 23px;
+        text-align: center !important;
+    }
+    .result{
+        background: #000;
+        display: grid;
+        grid-template-columns: auto;
+        padding: 0 0 0 0;
+        .resultImage{
+            width: 100% !important;
+            padding: 0;
+        }
+        .username{
+        color: gold;
+            font-size: 15px;
+        }
+    }
+
+    .formSec{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 5% 0 5%;
+        input{
+            margin: 10px;
+            border: 2px solid lightgray;
+            border-radius: 3px;
+            padding: 4px 8px 4px 8px ; 
+            font-weight: normal;
+            width: 200px;
+        }
+         .buttonn{
+             font-size: 10px !important;
+         }
+    }
+}
